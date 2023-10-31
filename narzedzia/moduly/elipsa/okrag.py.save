@@ -1,0 +1,15 @@
+from PIL import Image, ImageDraw, ImageFont
+from elipsa import .
+
+class Okrag:
+
+    def __init__(self, tlo, srodek, promien):
+        self.tlo = tlo
+        self.srodek = srodek
+        self.promien = promien
+
+    def rysuj(self):
+        szerokosc = self.promien * 2
+        rozmiar = [szerokosc, szerokosc]
+        elipsa = Elipsa(self.tlo, self.srodek, rozmiar)
+       
