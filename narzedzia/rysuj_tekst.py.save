@@ -1,0 +1,25 @@
+from grafika import *
+import random
+
+class Rysuj_tekst:
+
+    def __init__(self, parametry):
+        self.wejscie = parametry[0]
+        self.wyjscie = parametry[1]
+        self.paleta_RGB = parametry[2]
+        self.rozmiar = parametry[3]
+
+    def stworz_tla(self):
+            
+        
+
+
+    def dopisz_tekst(self):
+        wejscie = "grafika/jesien.jpg"
+        wyjscie = "grafika/jesien.jpeg"
+        tekst = "Jesień"
+        poczatek = (10, 10)
+        czcionka = "OpenSans.ttf"
+        rozmiar = 65
+        kolor = (255, 0, 0)
+        parametry = [wejscie, wyjscie, tekst, poczatek, czcionka, rozmiar, kolor]

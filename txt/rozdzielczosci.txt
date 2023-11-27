@@ -1,0 +1,2 @@
+Rozdzielczości w pikselach:
+- 4k: 3840 x 2160 
