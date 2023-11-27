@@ -1,0 +1,10 @@
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
+from narzedzia.moduly.efekty.kontrast.kontrast import *
+from narzedzia.moduly.operacje.operacje import *
+
+kontrast = Kontrast('grafika/drzewo.jpg', 'grafika/drzewo.jpeg')
+kontrast.kontrast("2.2")
+
+# operacje = Operacje('grafika/drzewo.jpg', 'grafika/wyciete-drzewo.jpeg')
+# gdzie_wyciac = [10, 10, 300, 40]
+# operacje.wytnij(gdzie_wyciac)

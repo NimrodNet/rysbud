@@ -14,12 +14,9 @@ from narzedzia.moduly.operacje.operacje import *
 # gdzie_wyciac = [10, 10, 300, 40]
 # operacje.wytnij(gdzie_wyciac)
 
-from narzedzia.wklej import *
-
-wejscie_1 = "grafika/jesien.jpg"
-wejscie_2 = "grafika/jesien.jpeg"
-poczatek = (200, 450)
-wyjscie = "grafika/jesien-1.jpeg"
-parametry = [wejscie_1, wejscie_2, poczatek, wyjscie]
-wklejanie = Wklej_grafike(parametry)
-wklejanie.wklej()
+from PIL import Image, ImageDraw, ImageFilter 
+   
+img1 = Image.open("grafika/jesien.jpg")  
+img2 = Image.open("grafika/jesien.jpeg") 
+img1.paste(img2, (100,450)) 
+img1.save("grafika/jesien-1.jpeg")
